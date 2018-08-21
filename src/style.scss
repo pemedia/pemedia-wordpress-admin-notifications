@@ -1,0 +1,29 @@
+$success: #4BB543;
+$error: #FF9494;
+$white: #fff;
+
+#pemedia-admin-notifications {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  z-index: 100000;
+
+  .notification {
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 200px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    border-radius: 2px;
+
+    &.success {
+      background-color: $success;
+      color: $white;
+    }
+
+    &.error {
+      background-color: $error;
+      color: $white;
+      border-left: none;
+    }
+  }
+}
